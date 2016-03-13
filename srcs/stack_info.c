@@ -6,7 +6,7 @@
 /*   By: ngrasset <ngrasset@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/13 00:53:33 by ngrasset          #+#    #+#             */
-/*   Updated: 2016/03/13 01:00:37 by ngrasset         ###   ########.fr       */
+/*   Updated: 2016/03/13 17:13:11 by ngrasset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,28 @@ int		get_stack_max(t_stack *s)
 		s = s->next;
 	}
 	return (max);
+}
+
+int		get_min_index(t_stack *s)
+{
+	int		min;
+	int		index;
+	int		i;
+
+	index = 0;
+	i = 0;
+	if (!s)
+		return (0);
+	min = s->content;
+	while (s)
+	{
+		if (s->content < min)
+		{
+			index = i;
+			min = s->content;
+		}
+		i++;
+		s = s->next;
+	}
+	return (index);
 }

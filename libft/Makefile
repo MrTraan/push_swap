@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ngrasset <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: ngrasset <ngrasset@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/27 13:41:14 by ngrasset          #+#    #+#              #
-#    Updated: 2016/03/03 21:56:56 by ngrasset         ###   ########.fr        #
+#    Updated: 2016/03/13 16:17:52 by ngrasset         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ SRC =	ft_memalloc.c		ft_memdel.c		ft_memset.c			ft_bzero.c\
 		ft_lstmap.c			ft_lstpush_back.c					ft_print_color.c\
 		ft_getchar.c		ft_putstrtab.c	get_next_line.c		ft_lstpop.c\
 		ft_delstrtab.c		ft_strjoin_delim.c					ft_str_isalpha.c\
-		ft_realloc.c		ft_isspace.c	ft_putnchar.c		ft_itoa_base.c
+		ft_realloc.c		ft_isspace.c	ft_putnchar.c		ft_itoa_base.c\
+		ft_isnumber.c
 NAME = libft.a
 INCLUDES = -I includes/
 CFLAGS = -Wall -Wextra -Werror

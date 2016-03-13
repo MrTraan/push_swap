@@ -6,7 +6,7 @@
 /*   By: ngrasset <ngrasset@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/12 23:26:58 by ngrasset          #+#    #+#             */
-/*   Updated: 2016/03/13 00:57:35 by ngrasset         ###   ########.fr       */
+/*   Updated: 2016/03/13 16:13:35 by ngrasset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,19 +78,9 @@ t_stack		*stack_pop_elem_front(t_stack **head)
 		return (NULL);
 	cur = *head;
 	*head = cur->next;
-	cur->next= NULL;
+	cur->next = NULL;
 	cur->previous = NULL;
 	if (*head)
 		(*head)->previous = NULL;
 	return (cur);
-}
-
-void		put_stack(t_stack *elem)
-{
-	while (elem)
-	{
-		ft_putnbr(elem->content);
-		ft_putchar('\n');
-		elem = elem->next;
-	}
 }

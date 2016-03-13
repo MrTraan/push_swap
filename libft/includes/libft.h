@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ngrasset <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ngrasset <ngrasset@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 11:27:25 by ngrasset          #+#    #+#             */
-/*   Updated: 2016/03/04 15:06:43 by ngrasset         ###   ########.fr       */
+/*   Updated: 2016/03/13 16:17:43 by ngrasset         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,5 +110,6 @@ int					ft_str_isalpha(char const *s);
 void				*ft_realloc(void *ptr, size_t o_size, size_t n_size);
 char				*ft_itoa_base(long long nbr, int base);
 char				*ft_uitoa_base(unsigned long long nbr, int base);
+int					ft_isnumber(char *s);
 
 #endif
